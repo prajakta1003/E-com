@@ -20,9 +20,11 @@
 }
 
 .collections{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
     gap: 30px;
+    width: 100%;
+    justify-content: space-evenly;
 }
   
