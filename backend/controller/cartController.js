@@ -23,5 +23,14 @@ const deleteCart = async(req, res) => {
     }
 }
 
+const getAllProductsInCart = async (req, res) => {
+    try {
+      const cartProducts = await Cart.find();
+      res.status(200).json({ cartProducts });
+    } catch (error) {
+      res.status(400).json({ error: error });
+    }
+  };
 
-module.exports= {addProductInCart,deleteCart}
+
+module.exports= {addProductInCart,deleteCart,getAllProductsInCart}

@@ -6,6 +6,9 @@ const productSchema= new Schema ({
     type: String,
     required: true,
   },
+  img : {
+    type: String,
+  },
   price: {
     type: Number,
     default : 0,
